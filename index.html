@@ -2,10 +2,87 @@
 3 <head>
 4   <title>mylife2015</title>
 5   <script src="processing-1.3.6.min.js"></script>
+    <script type="application/processing" data-processing-target="pjs">
+    IntDict concordance;
+String[] tokens;
+int counter = 0;
+//PImage bg;
+
+void setup() {
+//size(640, 360);
+fullScreen(2);
+//fill(0);
+  noStroke();
+    //bg = loadImage("1_1.png");
+     //bg = loadImage("2_2.png");
+    //bg = loadImage("1.png");
+concordance = new IntDict();
+
+// Load file and chop it up
+String[] lines = loadStrings("3.txt");
+String allText = join(lines, " ").toLowerCase();
+tokens = splitTokens(allText, " ,.?!:;[]-\"");
+
+// Create the font
+textFont(createFont("Batang.ttf", 24));
+
+
+
+}
+
+void draw() {
+background(0);
+//background(bg);
+
+
+
+
+// Look at words one at a time
+if (counter < tokens.length) {
+  String s = tokens[counter];
+  counter++;
+  concordance.increment(s);
+}
+
+// x and y will be used to locate each word
+float x = 0;
+float y = 48;
+
+concordance.sortValues();
+
+String[] keys = concordance.keyArray();
+
+// Look at each word
+for (String word : keys) {
+  int count = concordance.get(word);
+
+  // Only display words that appear 3 times
+  if (count > 3) {
+    // The size is the count
+    int fsize = constrain(count, 0,48);
+    textSize(fsize);
+    text(word, x, y);
+    // Move along the x-axis
+    x += textWidth(word + " ");
+  }
+
+  // If x gets to the end, move y
+  if (x > width) {
+    x = 0;
+    y += 48;
+    // If y gets to the end, we're done
+    if (y > height) {
+      break;
+    }
+  }
+}
+}
+    </script>
+
 6 </head>
 7 <body>
 <!-- 8   <h1>Processing.js Test</h1>
 9   <p>This is my first Processing.js web-based sketch:</p> -->
-10   <canvas data-processing-sources="sketch_1.pde"></canvas>
+10   <canvas id="pjs"></canvas>
 11 </body>
 12 </html>
