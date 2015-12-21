@@ -1,85 +1,12 @@
-2 <html>
-3 <head>
-4   <title>mylife2015</title>
-5   <script src="processing-1.3.6.min.js"></script>
-    <script type="application/processing" data-processing-target="pjs">
-    IntDict concordance;
-String[] tokens;
-int counter = 0;
-
-
-void setup() {
-size(900,900);
-// fullScreen(2);
-fill(0);
-  noStroke();
-    
-concordance = new IntDict();
-
-
-String[] lines = loadStrings("3.txt");
-String allText = join(lines, " ").toLowerCase();
-tokens = splitTokens(allText, " ,.?!:;[]-\"");
-
-
-textFont(createFont("Batang.ttf", 24));
-
-
-
-}
-
-void draw() {
-background(0);
-
-
-
-
-
-// Look at words one at a time
-if (counter < tokens.length) {
-  String s = tokens[counter];
-  counter++;
-  concordance.increment(s);
-}
-
-
-float x = 0;
-float y = 48;
-
-concordance.sortValues();
-
-String[] keys = concordance.keyArray();
-
-
-for (String word : keys) {
-  int count = concordance.get(word);
-
-
-  if (count > 3) {
-   
-    int fsize = constrain(count, 0,48);
-    textSize(fsize);
-    text(word, x, y);
-    
-    x += textWidth(word + " ");
-  }
-
-  
-  if (x > width) {
-    x = 0;
-    y += 48;
-    
-    if (y > height) {
-      break;
-    }
-  }
-}
-}
-    </script>
-
-6 </head>
-7 <body>
-
-10   <canvas id="pjs"></canvas>
-11 </body>
-12 </html>
+<html>
+<head>
+<title>mylife2015</title>
+<script src="processing-1.3.6.min.js"></script>
+</head>
+<body>
+<!-- 8   <h1>Processing.js Test</h1>
+<p>This is my first Processing.js web-based sketch:</p> -->
+<!-- <canvas id="pjs"></canvas>-->
+<canvas data-processing-sources="sketch_1.pde"></canvas>
+</body>
+</html>
