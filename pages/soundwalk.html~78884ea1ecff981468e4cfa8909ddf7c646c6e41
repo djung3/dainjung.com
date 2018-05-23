@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SoundWalk</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">DA IN JUNG</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Projects</a></li>
+                  <li><a href="about.html">About</a></li>
+
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <h3 class="post-title text-center">SoundWalk</h3>
+
+          <div class="col-lg-8 col-lg-offset-2 text-justify">
+            <p><em>SoundWalk</em> is an interactive audiovisual installation, which allows one to physically explore space through accidental sounds. It is an experimental attempt to gather spatial clues in reflected sounds, and will therefore help one to “make sense" of the world by drawing attention to the sonic characteristics of the city of Chicago.</p>
+            <p>The installation captures the position of the participant's head with a kinect sensor on the ceiling, which triggers several recorded sounds at any given spot. As the participant hits a certain point on the map, a sound is released toward the floor, where it reveals history of a site and oneself, presenting an ever-changing kinetic display that blends the individuals’ infinitely variable and unique movement.</p>
+
+            <div class =" text-right">2015<br>
+              Laser projecter, Kinect sensor, Parabolic speaker<br><br>
+              Made using<br>
+              Openframeworks<br>
+      </div>
+  </div>
+
+
+
+    <div class="row">
+            <div class="text-center">
+            <iframe src="https://player.vimeo.com/video/178738222" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/178738222">SoundWalk</a> from <a href="https://vimeo.com/user32153830">dain</a> on <a href="https://vimeo.com">Vimeo</a>. <br>password:8222</br> </p>
+
+              </div>
+
+      </div>
+
+
+
+        <!-- Related Projects Row -->
+        <div class="row">
+          <hr>
+
+          <h5 class="col-lg-12 ">Installation shots from Sullivan Gallery, March 2016 (click to enlarge):</h5>
+
+            <div class="col-xs-6">
+                <!-- Trigger the modal with image -->
+            <a href="#"><img class="img-responsive portfolio-item" src="1_SoundWalk/1_1.jpg" alt="" data-toggle="modal" data-target="#myModal" >
+                <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-responsive" src="1_SoundWalk/1_1.jpg"  alt="Another alt text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </a></div>
+
+                <div class="col-xs-6">
+                    <!-- Trigger the modal with image -->
+                <a href="#"><img class="img-responsive portfolio-item" src="1_SoundWalk/1_4.jpg" alt="" data-toggle="modal" data-target="#myModal2">
+                    <!-- Modal -->
+                  <div id="myModal2" class="modal fade" role="dialog">
+                      <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          
+                        </div>
+                        <div class="modal-body">
+                          <img class="img-responsive" src="1_SoundWalk/1_4.jpg"  alt="Another alt text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    </a></div>
+
+                    <div class="col-xs-6">
+                        <!-- Trigger the modal with image -->
+                    <a href="#"><img class="img-responsive portfolio-item" src="1_SoundWalk/1_3.jpg" alt="" data-toggle="modal" data-target="#myModal3">
+
+                        <!-- Modal -->
+                      <div id="myModal3" class="modal fade" role="dialog">
+                          <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <!-- <h4 class="modal-title">screenshot</h4> -->
+                            </div>
+                            <div class="modal-body">
+                              <img class="img-responsive" src="1_SoundWalk/1_3.jpg"  alt="Another alt text">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        </a></div>
+
+                        <div class="col-xs-6">
+                            <!-- Trigger the modal with image -->
+                        <a href="#"><img class="img-responsive portfolio-item" src="1_SoundWalk/1_2.jpg" alt="" data-toggle="modal" data-target="#myModal4">
+                            <!-- Modal -->
+                          <div id="myModal4" class="modal fade" role="dialog">
+                              <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  
+                                </div>
+                                <div class="modal-body">
+                                  <img class="img-responsive" src="1_SoundWalk/1_2.jpg"  alt="Another alt text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                            </a></div>
+
+  </div>
+
+  <hr>
+
+        <!-- Footer -->
+        <footer>
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                  <p id="copyright">&copy; DA IN JUNG</p>
+              </div>
+
+                <div class="col-lg-12">
+                  <p>Feel free to email me to provide some feedback on my work, or to just say hello!
+                    <br><a href="mailto:djung3@saic.edu">djung3@saic.edu</a></br></p>
+                    <p class="text-right" id="back-top"><a href="#">Going up?</a></p>
+                </div>
+              </div>
+
+            <!-- /.row -->
+        </footer>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
